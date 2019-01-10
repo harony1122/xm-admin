@@ -9,7 +9,7 @@ const moment = require('moment');
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`RFL Admin`,"http://twitch.tv/S-F")
+client.user.setGame(`XM BOT`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -268,16 +268,6 @@ channel.guild.owner.send(`<@!${channelremover.id}>
 
 
 
-client.on('guildMemberAdd', (member) => {
-member.addRole(member.guild.roles.find('name', '『⊰ʀғ⍸』'));  
-});
-
-
-
-
-
-
-
 
 
 
@@ -316,54 +306,6 @@ client.on("message", message => {
 
 
   
- 
-
-
-client.on("ready", async  => {
-setInterval(function(){
-
-client.channels.find('id', '524087588458594305').setName("W");
-client.channels.find('id', '524087588458594305').setName("We");
-client.channels.find('id', '524087588458594305').setName("Wel");
-client.channels.find('id', '524087588458594305').setName("Welc");
-client.channels.find('id', '524087588458594305').setName("Welco");
-client.channels.find('id', '524087588458594305').setName("Welcom");
-client.channels.find('id', '524087588458594305').setName("Welcome");
-client.channels.find('id', '524087588458594305').setName("Welcome T");
-client.channels.find('id', '524087588458594305').setName("Welcome To");
-client.channels.find('id', '524087588458594305').setName("Welcome To ");
-client.channels.find('id', '524087588458594305').setName("Welcome To  ");
-client.channels.find('id', '524087588458594305').setName("Welcome To  R");
-client.channels.find('id', '524087588458594305').setName("Welcome To  R ");
-client.channels.find('id', '524087588458594305').setName("Welcome To  R F");
-client.channels.find('id', '524087588458594305').setName("Welcome To  R F ");
-client.channels.find('id', '524087588458594305').setName("Welcome To  R F L");
-client.channels.find('id', '524087588458594305').setName("Welcome To  R F L.."); /// 
-client.channels.find('id', '524087588458594305').setName("Welcome To  R F L..");
-client.channels.find('id', '524087588458594305').setName("Welcome To  R F L..");
-
-client.channels.find('id', '524087588458594305').setName("Welcome To  R F L..");
-client.channels.find('id', '524087588458594305').setName("Welcome To  R F ");
-client.channels.find('id', '524087588458594305').setName("Welcome To  R F");
-client.channels.find('id', '524087588458594305').setName("Welcome To  R ");
-client.channels.find('id', '524087588458594305').setName("Welcome To  R");
-client.channels.find('id', '524087588458594305').setName("Welcome To  ");
-client.channels.find('id', '524087588458594305').setName("Welcome To ");
-client.channels.find('id', '524087588458594305').setName("Welcome To");
-client.channels.find('id', '524087588458594305').setName("Welcome T");
-client.channels.find('id', '524087588458594305').setName("Welcome ");
-client.channels.find('id', '524087588458594305').setName("Welcome");
-client.channels.find('id', '524087588458594305').setName("Welcom");
-client.channels.find('id', '524087588458594305').setName("Welco");
-client.channels.find('id', '524087588458594305').setName("Welc");
-client.channels.find('id', '524087588458594305').setName("Wel");
-client.channels.find('id', '524087588458594305').setName("We");
-client.channels.find('id', '524087588458594305').setName("W");
-
-  
-  }, 4000);
-
-});
 
 
 
@@ -383,16 +325,6 @@ client.on('message', message => {
 
 
 
-
-
-
-client.on('ready', () => {
-    setInterval(function(){
-        client.guilds.get('508761735365263370').roles.find('name', 'color').edit({color: 'RANDOM'})
-    },5000);
-  
-
-})
 
 
 
@@ -492,5 +424,4 @@ delete warn[message.author.id];
 
 
 
-
-client.login("NTIzOTA2NDE2NTU4NDczMjE3.DvgVwQ.wq-_rnT3-hVji_YsDXBT5ntnnsU");
+client.login(process.env.BOT_TOKEN);
